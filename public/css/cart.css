@@ -95,11 +95,11 @@ ul , ol{
 
 }
 
-.total{ border-radius: 5px;
+.total{ 
+    border-radius: 5px;
     font-weight: bold;
     background-color:#bdecb6;
     height: 1.3em;
-
 }
 .enlace{
     text-decoration: underline;
@@ -200,7 +200,6 @@ ul , ol{
     border: 2px solid #ca771e;
   }
 
-  
   
 /*cart box*/
 .footer-cart {
