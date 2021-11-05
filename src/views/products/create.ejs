@@ -9,28 +9,28 @@
             <div>
                 &nbsp;
                 <h2 clas= form-ingreso>Ingrese un producto nuevo</h2>
+                <div>
                 <form action="/products/create" method="POST">
-    
-                    <label>Nombre del producto</label>
-                    <input type="text" name ="productName">
-                    <br>
-                    <label>Descripcion del producto</label>
-                    <input type="text" name ="productDescription">
-                    <br>    
-                    <label>Imagen del producto</label>
-                    <input type="file" name ="productFile">
-                    <br>
                     <label>Categoria</label>
                     <input type="text" name ="productCategory">
                     <br>
-                    <label>Talle del producto</label>
+                    <label>Nombre del producto</label>
+                    <input type="text" name ="productName">
+                    <br>
+                    <label>Descripcion</label>
+                    <input type="text" name ="productDescription">
+                    <br>    
+                    <label>Imagen</label>
+                    <input type="file" name ="productFile">
+                    <br>
+                    <label>Material y medida de la maceta</label>
                     <input type="text" name ="productSize">
                     <br>
-                    <label>Precio del producto</label>
+                    <label>Precio</label>
                     <input type="text" name ="productPrice">
                     <br>
                     <button type="submit">Cargar</button>
-                    <button type="reset">Reset</button>
+                    <button type="reset">Reiniciar</button>
                 </form>
             </div>
         </section>
