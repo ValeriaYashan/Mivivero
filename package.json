@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Grupo06VIJJ/Grupo_6_.git"
+    "url": "git+https://github.com/ValeriaYashan/Mivivero"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Grupo06VIJJ/Grupo_6_/issues"
+    "url": "https://github.com/ValeriaYashan/Mivivero/issues"
   },
-  "homepage": "https://github.com/Grupo06VIJJ/Grupo_6_#readme",
+  "homepage": "https://github.com/ValeriaYashan/Mivivero#readme",
   "dependencies": {
     "cookie-parser": "^1.4.5",
     "ejs": "^3.1.6",
