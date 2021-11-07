@@ -3,9 +3,10 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const methoOverride = require("method-override");
-const usersRoutes = require("./routes/usersRoutes.js");
-const productsRoutes = require("./routes/productsRoutes.js");
-const mainRoutes = require("./routes/mainRoutes.js");
+const usersRoutes = require("./routes/usersRoutes");
+const productsRoutes = require("./routes/productsRoutes");
+const mainRoutes = require("./routes/mainRoutes");
+
 /*const groupsRoutes=require('./routes/groupsRoutes.js');*/
 /*var session= require( "express-session");*/
 
@@ -26,11 +27,16 @@ app.use("/users", usersRoutes);
 //Productos
 app.use("/products", productsRoutes);
 
+/*cursos*/
+
 //Home y variados
+
 app.use("/", mainRoutes);
 /*app.use(session({secret:"secreto"}));*/
 /* rutas Crud*/
 /*app.use("/groups", groupsRoutes);/*esta carpeta deberia tener edit...)*/
+
+
 
 app.listen(process.env.PORT || 3000, function() {
     console.log(`Servidor corriendo en puerto 3000`);

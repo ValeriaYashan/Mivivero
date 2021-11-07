@@ -23,23 +23,6 @@ router.put("/:id/update",productsController.productUpdate);
 
 
 
-/* Imagenes*/
-/*const multer = require('multer'); 
-
-const multerDiskStorage = multer.diskStorage({
-    destination: function(req, file, cb) {       
-     cb(null, path.join(__dirname,'../../public/img/plantas'));    
-    },
-    filename: function(req, file, cb) {          
-     let imageName = 'img' + '-' + file.originalname;   
-     cb(null, imageName);         
-    }
-});
-
-const uploadFile = multer({ storage: multerDiskStorage });
-*/
-
-
 
 
 

@@ -7,6 +7,7 @@ let productsController = {
     cart: (req, res) => {
         res.render('products/cart');
     },
+    
     detail: (req, res) => {
         res.render('products/detail');
     },
@@ -103,7 +104,7 @@ let productsController = {
         res.redirect('/products/list');
 
     },
-
+   
 }
     
 

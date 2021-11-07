@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require("fs");
 
 
-     let productos = [
+     /*let productos = [
         {
             id: 1,
             nombre: 'PlantaA',
@@ -42,7 +42,7 @@ const fs = require("fs");
     
     /**
      * Dibuja todos los productos a partir de la base de datos. No confundir con el carrito
-     */
+     
     function renderizarProductos() {
         baseDeDatos.forEach((info) => {
             // Estructura
@@ -81,7 +81,7 @@ const fs = require("fs");
     
     /**
      * Evento para añadir un producto al carrito de la compra
-     */
+     
     function anyadirProductoAlCarrito(evento) {
         // Anyadimos el Nodo a nuestro carrito
         carrito.push(evento.target.getAttribute('marcador'))
@@ -94,7 +94,7 @@ const fs = require("fs");
     
     /**
      * Dibuja todos los productos guardados en el carrito
-     */
+     
     function renderizarCarrito() {
         // Vaciamos todo el html
         DOMcarrito.textContent = '';
@@ -131,7 +131,7 @@ const fs = require("fs");
     
     /**
      * Evento para borrar un elemento del carrito
-     */
+     
     function borrarItemCarrito(evento) {
         // Obtenemos el producto ID que hay en el boton pulsado
         const id = evento.target.dataset.item;
@@ -147,7 +147,7 @@ const fs = require("fs");
     
     /**
      * Calcula el precio total teniendo en cuenta los productos repetidos
-     */
+     
     function calcularTotal() {
         // Limpiamos precio anterior
         total = 0;
@@ -165,7 +165,7 @@ const fs = require("fs");
     
     /**
      * Varia el carrito y vuelve a dibujarlo
-     */
+     
     function vaciarCarrito() {
         // Limpiamos los productos guardados
         carrito = [];
@@ -186,4 +186,4 @@ const fs = require("fs");
         checkout: function (req,res){
             res.render("productos", {items:productos});
         }
-    }
+    }*/
