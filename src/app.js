@@ -6,9 +6,8 @@ const methoOverride = require("method-override");
 const usersRoutes = require("./routes/usersRoutes");
 const productsRoutes = require("./routes/productsRoutes");
 const mainRoutes = require("./routes/mainRoutes");
+const cursosRoutes = require("./routes/productsRoutes");/*arregalar esto*/
 
-/*const groupsRoutes=require('./routes/groupsRoutes.js');*/
-/*var session= require( "express-session");*/
 
 app.set('view engine', 'ejs');
 app.set('views', path.resolve(__dirname, 'views'));
@@ -28,13 +27,11 @@ app.use("/users", usersRoutes);
 app.use("/products", productsRoutes);
 
 /*cursos*/
-
+app.use("/products", productsRoutes);/*arregalar esto*/
 //Home y variados
 
 app.use("/", mainRoutes);
-/*app.use(session({secret:"secreto"}));*/
-/* rutas Crud*/
-/*app.use("/groups", groupsRoutes);/*esta carpeta deberia tener edit...)*/
+
 
 
 

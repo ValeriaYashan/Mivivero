@@ -1,12 +1,12 @@
 /*const cursosController= {}
 cursosController.cursos = (req,res)=>{ 
-res.send ('conexion correcta')
-}
-/*const path = require('path');
+res.render ('cursos')
+}*/
+const path = require('path');
 let cursosController = {
-    //Pagina principal
-    home: (req, res) => {
+    //LISTADO DE CURSOS
+    register: (req, res) => {
         res.render('cursos')
     },
 }
-module.exports = cursosController;*/
+module.exports = cursosController;
